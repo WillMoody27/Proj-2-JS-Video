@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+.video-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+.video-header {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.725);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+}
+/* Dark Video Overlay */
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 29, 20, 0.7);
+  z-index: -1;
+}
+
+/* switch button */
+
+.switch-btn {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 7rem;
+  height: 2rem;
+  display: flex;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  transition: 0.25s ease-in-out;
+}
+.switch-btn span {
+  display: inline-block;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.switch {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #0077ff;
+  border-radius: 4px;
+  margin: 0;
+  display: block;
+  transition: 0.25s ease-in-out;
+}
+.slide .switch {
+  left: 50%;
+}
+.slide .switch {
+  left: 50%;
+}
+
+/* Video Speed JS */
+.video-speed-header {
+  position: absolute;
+  padding: 10px;
+  border-radius: 5px;
+  outline: 1px solid rgba(217, 217, 217, 0.5);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: center;
+  top: 2%;
+  left: 2%;
+}
+.playback-container {
+  border: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.playback-container .video-playback-option {
+  border: none;
+  padding: 15px;
+  height: 40px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+  background: rgba(255, 255, 255, 0.7);
+  align-items: center;
+  display: flex;
+}
+.playback-container .video-playback-option:hover {
+  background-color: #0077ff;
+  color: #fff;
+}
+.speed-display-container {
+  text-align: center;
+}
+
+.main-footer {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
